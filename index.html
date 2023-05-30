@@ -1,1 +1,85 @@
-<div>Hello</div>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", serif;
+        }
+        .header {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .subheader-text {
+            font-size: 20px;
+            letter-spacing: 8px;
+        }
+        .illustration {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            height: 60vh;
+        }
+        .coming-soon-img {
+            max-width: 700px;
+            height: auto;
+        }
+        .body-container {
+            height: 80vh;
+            padding: 0 24px;
+        }
+        .content {
+            margin-left: 40vw;
+            font-size: 20px;
+            max-width: 700px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        @media screen and (max-width: 480px) {
+            .illustration {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: auto;
+                height: 45vh;
+            }
+            .body-container {
+                padding: 0 12px
+            }
+            .content {
+                padding-top: 24px;
+                height: auto;
+                margin-left: 0;
+                font-size: 20px;
+                max-width: 700px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+    </style>
+    <body>
+        <header class="header">
+            <img src="./vega-logo.png" />
+            <span class="subheader-text">DESIGN PORTFOLIO</span>
+        </header>
+        <section class="body-container">
+            <img class="illustration" src="./illustration.png" />
+            <div class="content">
+                <img class="coming-soon-img" src="./coming-soon.svg" />
+                <div>
+                    <p>I am in an Age of Exploration — and I always will be. Driven by curiosity, adventure, and community my entire life, I approach design as an opportunity to craft meaningful experiences for users.</p>
+                    <p>Check back to see my UI/UX and visual design portfolio, you won't regret it!</p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
