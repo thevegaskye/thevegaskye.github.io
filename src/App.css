@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #6F83C3;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100px;
+}
+.header-logo {
+  width: 300px;
+  height: auto;
+}
+.header-text {
   color: white;
+  font-size: 15px;
+  letter-spacing: 10px;
+  padding-left: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.illustration {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 60vh;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desktop-coming-soon {
+  max-width: 546px;
+  height: auto;
+}
+.body-container {
+  height: 80vh;
+  padding: 0 36px;
+}
+.text-content {
+  margin-left: 40vw;
+  font-size: 20px;
+  max-width: 550px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+@media screen and (max-width: 1200px) {
+  .illustration {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: 50vh;
   }
-  to {
-    transform: rotate(360deg);
+  .desktop-coming-soon {
+      display: none;
+  }
+  /* here */
+  .text-content {
+      margin: 12px;
+      margin-left: 15%;
+      height: auto;
+      font-size: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .mobile-coming-soon {
+      display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  .illustration {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: 45vh;
+  }
+}
+@media screen and (max-width: 720px) {
+  .text-content {
+      margin-left: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .illustration {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: auto;
+      height: 45vh;
+  }
+  .text-content {
+      font-size: 16px;
+      margin-left: 12px;
+  }
+  .body-container {
+      padding: 0 12px
   }
 }
